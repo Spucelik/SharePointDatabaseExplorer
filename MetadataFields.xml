@@ -1,0 +1,236 @@
+<uncompressedData>14.0.0.6126.0.0<Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" Group="Base Columns" Type="Text" DisplayName="Inmate ID" Required="TRUE" FromBaseType="TRUE" EnforceUniqueValues="TRUE" Indexed="TRUE" MaxLength="255" Version="2" ColName="nvarchar1" RowOrdinal="0" />
+	<Field Type="Text" DisplayName="First Name" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{2b001f80-bdbf-4c03-abdc-f24645f866dd}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="First_x0020_Name" Name="First_x0020_Name" ColName="nvarchar3" RowOrdinal="0" />
+	<Field Type="Text" DisplayName="Last Name" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{fb8cebf3-3ee1-42fb-af3d-81e280a72b13}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="Last_x0020_Name" Name="Last_x0020_Name" ColName="nvarchar4" RowOrdinal="0" />
+	<Field Type="Choice" DisplayName="Gender" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{f31d520a-69a9-4e21-a6dc-f6018e32421b}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="Gender" Name="Gender" ColName="nvarchar5" RowOrdinal="0">
+		<CHOICES>
+			<CHOICE>Male</CHOICE>
+			<CHOICE>Female</CHOICE>
+		</CHOICES>
+	</Field>
+	<Field Type="DateTime" DisplayName="Date of Birth" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" ID="{930264e3-0609-41c8-b85b-b0dcdd302433}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="Date_x0020_of_x0020_Birth" Name="Date_x0020_of_x0020_Birth" ColName="datetime1" RowOrdinal="0" />
+	<Field Type="Number" DisplayName="Age" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Decimals="0" ID="{25a94d47-2ee8-4b06-8365-d3847533bd4b}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="Age" Name="Age" ColName="float1" RowOrdinal="0" Description="The system will calculate the age." Percentage="FALSE" Version="1" />
+	<Field Type="Lookup" DisplayName="POD Location" Required="FALSE" EnforceUniqueValues="FALSE" List="{99a5b83a-524a-4d0d-9217-1d7eef0ca14b}" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" RelationshipDeleteBehavior="None" ID="{23377835-c4dc-42a2-9e22-3ee0c9a8ab6f}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="POD_x0020_Location" Name="POD_x0020_Location" ColName="int1" RowOrdinal="0" />
+	<Field Type="DateTime" DisplayName="Date of Confinement" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" ID="{c82a35cc-75e4-4e75-8987-e9bc0087fc43}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="Date_x0020_of_x0020_Comittment" Name="Date_x0020_of_x0020_Comittment" ColName="datetime2" RowOrdinal="0" CalType="0" Version="1" />
+	<Field Type="Text" DisplayName="Cell" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{092df191-bd0c-487f-af20-2e89c4fb5baf}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="Cell" Name="Cell" ColName="nvarchar6" RowOrdinal="0" />
+	<Field Type="Choice" DisplayName="Status" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{362728b9-9667-45f5-bb4b-3e8137433d0f}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="Status" Name="Status" ColName="nvarchar7" RowOrdinal="0">
+		<Default>Active</Default>
+		<CHOICES>
+			<CHOICE>Active</CHOICE>
+			<CHOICE>Inactive</CHOICE>
+		</CHOICES>
+	</Field>
+	<Field Type="DateTime" DisplayName="Chronic Clinic Date" Description="Date admitted to Chronic Clinic" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" ID="{778a21f6-adba-4b24-ac15-b476e8820f0b}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="Chronic_x0020_Clinic_x0020_Date" Name="Chronic_x0020_Clinic_x0020_Date" ColName="datetime3" RowOrdinal="0" />
+	<Field Type="Choice" DisplayName="Inmate Type" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{98ee2e86-79ce-43e4-a3a7-22f9beba8b5a}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="Inmate_x0020_Type" Name="Inmate_x0020_Type" ColName="nvarchar8" RowOrdinal="0" Version="2">
+		<CHOICES>
+			<CHOICE>BOP</CHOICE>
+			<CHOICE>County</CHOICE>
+			<CHOICE>IDOC</CHOICE>
+			<CHOICE>Huber</CHOICE>
+			<CHOICE>ICE</CHOICE>
+			<CHOICE>Out of County</CHOICE>
+			<CHOICE>Tribal</CHOICE>
+			<CHOICE>USM</CHOICE>
+			<CHOICE>Work Release</CHOICE>
+			<CHOICE>Weekender</CHOICE>
+			<CHOICE>Pre-Trial</CHOICE>
+			<CHOICE>Straight Time</CHOICE>
+		</CHOICES>
+	</Field>
+	<Field Type="Note" DisplayName="Medication Allergies" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" Sortable="FALSE" ID="{783c372e-491b-44ec-8e99-d50fa57c03f4}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="Medication_x0020_Allergies" Name="Medication_x0020_Allergies" ColName="ntext3" RowOrdinal="0" />
+	<Field Type="Note" DisplayName="General Allergies" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" Sortable="FALSE" ID="{f83c53c5-40d8-463d-83f0-cb5854cc3c2f}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="General_x0020_Allergies" Name="General_x0020_Allergies" ColName="ntext2" RowOrdinal="0" />
+	<Field Type="Calculated" DisplayName="Inmate Name" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{d2adb05c-6fcd-4cc3-973e-204fd6ef95d3}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="Inmate_x0020_Name" Name="Inmate_x0020_Name" ColName="sql_variant1" RowOrdinal="0">
+		<Formula>=Last_x0020_Name&amp;", "&amp;First_x0020_Name&amp;" ("&amp;Title&amp;")"</Formula>
+		<FieldRefs>
+			<FieldRef Name="Title" />
+			<FieldRef Name="First_x0020_Name" />
+			<FieldRef Name="Last_x0020_Name" />
+		</FieldRefs>
+	</Field>
+	<FieldRef Name="ContentTypeId" />
+	<FieldRef Name="_ModerationComments" ColName="ntext1" />
+	<Field ID="{bc91a437-52e7-49e1-8c4e-4698904b2b6d}" ReadOnly="TRUE" Type="Computed" Name="LinkTitleNoMenu" DisplayName="Inmate ID" Dir="" DisplayNameSrcField="Title" AuthoringInfo="$Resources:core,Linked_Item;" EnableLookup="TRUE" ListItemMenuAllowed="Prohibited" LinkToItemAllowed="Prohibited" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="LinkTitleNoMenu" FromBaseType="TRUE">
+		<FieldRefs>
+			<FieldRef Name="Title" />
+			<FieldRef Name="LinkFilenameNoMenu" />
+		</FieldRefs>
+		<DisplayPattern>
+			<IfEqual>
+				<Expr1>
+					<LookupColumn Name="FSObjType" />
+				</Expr1>
+				<Expr2>1</Expr2>
+				<Then>
+					<Field Name="LinkFilenameNoMenu" />
+				</Then>
+				<Else>
+					<HTML>
+						<![CDATA[<a onfocus="OnLink(this)" href="]]>
+					</HTML>
+					<URL />
+					<HTML>
+						<![CDATA[" onclick="EditLink2(this,]]>
+					</HTML>
+					<Counter Type="View" />
+					<HTML>
+						<![CDATA[);return false;" target="_self">]]></HTML>
+					<Column HTMLEncode="TRUE" Name="Title" Default="$Resources:core,NoTitle;" />
+					<IfEqual>
+						<Expr1>
+							<GetVar Name="ShowAccessibleIcon" />
+						</Expr1>
+						<Expr2>1</Expr2>
+						<Then>
+							<HTML>
+								<![CDATA[<img src="/_layouts/images/blank.gif" class="ms-hidden" border="0" width="1" height="1" alt="$Resources:core,OpenMenuKeyAccessible;"/>]]></HTML>
+						</Then>
+					</IfEqual>
+					<HTML>
+						<![CDATA[</a>]]></HTML>
+					<IfNew>
+						<HTML>
+							<![CDATA[<img src="/_layouts/[%=System.Threading.Thread.CurrentThread.CurrentUICulture.LCID%]/images/new.gif" alt="]]>
+						</HTML>
+						<HTML>$Resources:core,new_gif_alttext;</HTML>
+						<HTML>
+							<![CDATA[" class="ms-newgif" />]]></HTML>
+					</IfNew>
+				</Else>
+			</IfEqual>
+		</DisplayPattern>
+	</Field>
+	<Field ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" ReadOnly="TRUE" Type="Computed" Name="LinkTitle" DisplayName="Inmate ID" DisplayNameSrcField="Title" ClassInfo="Menu" AuthoringInfo="$Resources:core,Linked_Item_With_Menu;" ListItemMenuAllowed="Required" LinkToItemAllowed="Prohibited" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="LinkTitle" FromBaseType="TRUE">
+		<FieldRefs>
+			<FieldRef Name="Title" />
+			<FieldRef Name="LinkTitleNoMenu" />
+			<FieldRef Name="_EditMenuTableStart2" />
+			<FieldRef Name="_EditMenuTableEnd" />
+		</FieldRefs>
+		<DisplayPattern>
+			<FieldSwitch>
+				<Expr>
+					<GetVar Name="FreeForm" />
+				</Expr>
+				<Case Value="TRUE">
+					<Field Name="LinkTitleNoMenu" />
+				</Case>
+				<Default>
+					<Switch>
+						<Expr>
+							<GetVar Name="MasterVersion" />
+						</Expr>
+						<Case Value="4">
+							<HTML>
+								<![CDATA[<div class="ms-vb itx" onmouseover="OnItem(this)" CTXName="ctx]]>
+							</HTML>
+							<Field Name="_EditMenuTableStart2" />
+							<HTML>
+								<![CDATA[">]]></HTML>
+							<Field Name="LinkTitleNoMenu" />
+							<HTML>
+								<![CDATA[</div>]]></HTML>
+							<HTML>
+								<![CDATA[<div class="s4-ctx" onmouseover="OnChildItem(this.parentNode); return false;">]]></HTML>
+							<HTML>
+								<![CDATA[<span>&nbsp;</span>]]></HTML>
+							<HTML>
+								<![CDATA[<a onfocus="OnChildItem(this.parentNode.parentNode); return false;" onclick="PopMenuFromChevron(event); return false;" href="javascript:;" title="$Resources:core,open_menu;"></a>]]></HTML>
+							<HTML>
+								<![CDATA[<span>&nbsp;</span>]]></HTML>
+							<HTML>
+								<![CDATA[</div>]]></HTML>
+						</Case>
+						<Default>
+							<HTML>
+								<![CDATA[<table height="100%" cellspacing="0" class="ms-unselectedtitle itx" onmouseover="OnItem(this)" CTXName="ctx]]>
+							</HTML>
+							<Field Name="_EditMenuTableStart2" />
+							<HTML>
+								<![CDATA["><tr><td width="100%" class="ms-vb">]]></HTML>
+							<SetVar Name="ShowAccessibleIcon" Value="1" />
+							<Field Name="LinkTitleNoMenu" />
+							<SetVar Name="ShowAccessibleIcon" Value="0" />
+							<HTML>
+								<![CDATA[</td><td><img src="/_layouts/images/blank.gif" width="13" style="visibility:hidden" alt=""/></td></tr></table>]]></HTML>
+						</Default>
+					</Switch>
+				</Default>
+			</FieldSwitch>
+		</DisplayPattern>
+	</Field>
+	<Field ID="{5f190d91-3dbc-4489-9878-3c092caf35b6}" Hidden="TRUE" ReadOnly="TRUE" Type="Computed" Name="LinkTitle2" DisplayName="Inmate ID" DisplayNameSrcField="Title" ClassInfo="Menu" AuthoringInfo="$Resources:core,Linked_Item_With_Menu; (old)" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="LinkTitle2" FromBaseType="TRUE">
+		<FieldRefs>
+			<FieldRef Name="Title" />
+			<FieldRef Name="LinkTitleNoMenu" />
+			<FieldRef Name="_EditMenuTableStart" />
+			<FieldRef Name="_EditMenuTableEnd" />
+		</FieldRefs>
+		<DisplayPattern>
+			<FieldSwitch>
+				<Expr>
+					<GetVar Name="FreeForm" />
+				</Expr>
+				<Case Value="TRUE">
+					<Field Name="LinkTitleNoMenu" />
+				</Case>
+				<Default>
+					<Field Name="_EditMenuTableStart" />
+					<SetVar Name="ShowAccessibleIcon" Value="1" />
+					<Field Name="LinkTitleNoMenu" />
+					<SetVar Name="ShowAccessibleIcon" Value="0" />
+					<Field Name="_EditMenuTableEnd" />
+				</Default>
+			</FieldSwitch>
+		</DisplayPattern>
+	</Field>
+	<FieldRef Name="File_x0020_Type" ColName="nvarchar2" />
+	<Field DisplayName="Update Age" Type="WorkflowStatus" Required="FALSE" ID="{cd5e2ca4-e995-4931-8a92-590448384646}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="UpdateAg" Name="UpdateAg" ColName="nvarchar10" RowOrdinal="0" Version="10" WorkflowStatusURL="_layouts/WrkStat.aspx" ReadOnly="TRUE">
+		<CHOICES>
+			<CHOICE>Starting</CHOICE>
+			<CHOICE>Failed on Start</CHOICE>
+			<CHOICE>In Progress</CHOICE>
+			<CHOICE>Error Occurred</CHOICE>
+			<CHOICE>Canceled</CHOICE>
+			<CHOICE>Completed</CHOICE>
+			<CHOICE>Failed on Start (retrying)</CHOICE>
+			<CHOICE>Error Occurred (retrying)</CHOICE>
+			<CHOICE />
+			<CHOICE />
+			<CHOICE />
+			<CHOICE />
+			<CHOICE />
+			<CHOICE />
+			<CHOICE />
+			<CHOICE>Canceled</CHOICE>
+			<CHOICE>Approved</CHOICE>
+			<CHOICE>Rejected</CHOICE>
+		</CHOICES>
+	</Field>
+	<Field Type="Text" DisplayName="Imported" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{2dd48270-8854-4f7c-bf3d-3b9f93545822}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="Imported" Name="Imported" ColName="nvarchar11" RowOrdinal="0" />
+	<Field Type="DateTime" DisplayName="DateOfConfinementOLD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" ID="{2325bae5-ee96-4546-9649-d0f7b5de65ad}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="DateOfConfinementOLD" Name="DateOfConfinementOLD" ColName="datetime4" RowOrdinal="0" />
+	<Field Type="DateTime" DisplayName="InactiveDate" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" ID="{de345756-1447-401f-89f6-a8c940e7f89f}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="InactiveDate" Name="InactiveDate" ColName="datetime5" RowOrdinal="0" />
+	<Field DisplayName="New Inmate Created" Type="WorkflowStatus" Required="FALSE" ID="{53dc35fa-ac78-40a3-9163-e4e5889c0fe2}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="NewInmat" Name="NewInmat" ColName="nvarchar9" RowOrdinal="0" Version="2" WorkflowStatusURL="_layouts/WrkStat.aspx" ReadOnly="TRUE">
+		<CHOICES>
+			<CHOICE>Starting</CHOICE>
+			<CHOICE>Failed on Start</CHOICE>
+			<CHOICE>In Progress</CHOICE>
+			<CHOICE>Error Occurred</CHOICE>
+			<CHOICE>Canceled</CHOICE>
+			<CHOICE>Completed</CHOICE>
+			<CHOICE>Failed on Start (retrying)</CHOICE>
+			<CHOICE>Error Occurred (retrying)</CHOICE>
+			<CHOICE />
+		</CHOICES>
+	</Field>
+	<Field Type="Text" DisplayName="SSN" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="15" ID="{85c025d4-2624-4df7-8103-d96ab762f15d}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="SSN" Name="SSN" ColName="nvarchar12" RowOrdinal="0" />
+	<Field Type="Boolean" DisplayName="Federal" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{e0215329-2e01-4973-ab4a-3ccac9d8e3fa}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="Federal" Name="Federal" ColName="bit1" RowOrdinal="0">
+		<Default>0</Default>
+	</Field>
+	<Field Type="Boolean" DisplayName="ICE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{911e5576-b2d8-4c8a-a353-771d603f2603}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="ICE" Name="ICE" ColName="bit2" RowOrdinal="0">
+		<Default>0</Default>
+	</Field>
+	<Field Type="Boolean" DisplayName="DOC" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{9e3d13f5-68c0-454e-a8f3-4db483f54b21}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="DOC" Name="DOC" ColName="bit3" RowOrdinal="0">
+		<Default>0</Default>
+	</Field>
+	<Field Type="Text" DisplayName="Race" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{23329dc9-1167-4f51-9f9f-216282fd5f63}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="Race" Name="Race" ColName="nvarchar13" RowOrdinal="0" />
+	<Field Type="URL" DisplayName="InmatePhoto" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Hyperlink" ID="{837d8579-a5b5-4ea7-b90a-53e961e4a9ab}" SourceID="{009be053-7e6b-4c69-8dcc-f8cf493c09c3}" StaticName="InmatePhoto" Name="InmatePhoto" ColName="nvarchar14" RowOrdinal="0" ColName2="nvarchar15" RowOrdinal2="0" />
+</uncompressedData>
